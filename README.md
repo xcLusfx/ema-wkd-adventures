@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--ema-wkd-adventures--xcLusfx.aem.page/
-- Live: https://main--ema-wkd-adventures--xcLusfx.aem.live/
+- Preview: https://main--ema-wkd-adventures--xcLusfx.aem.page/us/en
+- Live: https://main--ema-wkd-adventures--xcLusfx.aem.live/us/en
 
 ## Documentation
 
