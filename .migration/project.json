@@ -2,5 +2,6 @@
   "previewOrg": "xclusfx",
   "previewSite": "ema-wkd-adventures",
   "type": "da",
-  "contentHostUrl": "https://content.da.live/xclusfx/ema-wkd-adventures/"
+  "contentHostUrl": "https://content.da.live/xclusfx/ema-wkd-adventures/",
+  "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
 }

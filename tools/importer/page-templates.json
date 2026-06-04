@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://wknd.site/us/en.html"],
+      "description": "WKND Adventures homepage with hero carousel, featured article teaser, recent articles grid, and next adventures section",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [".carousel.cmp-carousel--hero"]
+        },
+        {
+          "name": "teaser-featured",
+          "instances": [".teaser.cmp-teaser--featured"]
+        },
+        {
+          "name": "cards-article",
+          "instances": ["#container-9c4899b718 .image-list.list", "#container-4d3fed64ff .image-list.list"]
+        },
+        {
+          "name": "teaser-adventure",
+          "instances": [".teaser.cmp-teaser--hero.cmp-teaser--imagebottom"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero Carousel",
+          "selector": ".carousel.cmp-carousel--hero",
+          "style": null,
+          "blocks": ["carousel-hero"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-content",
+          "name": "Featured Content",
+          "selector": "main.cmp-layout-container--fixed #container-9c4899b718",
+          "style": null,
+          "blocks": ["teaser-featured", "cards-article"],
+          "defaultContent": ["#title-c2d2b28d00", "#button-2e6d32893a", "#separator-bd766ae5bf", "#title-971080d74b"]
+        },
+        {
+          "id": "section-3-adventure-teaser",
+          "name": "Adventure Teaser",
+          "selector": ".teaser.cmp-teaser--hero.cmp-teaser--imagebottom",
+          "style": null,
+          "blocks": ["teaser-adventure"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-adventures",
+          "name": "Adventures Grid",
+          "selector": "main.cmp-layout-container--fixed #container-4d3fed64ff",
+          "style": null,
+          "blocks": ["cards-article"],
+          "defaultContent": ["#title-ca6ac0fe65", "#button-b6562c963d", "#separator-e8e691c190"]
+        }
+      ]
+    }
+  ]
+}

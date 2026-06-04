@@ -1,0 +1,39 @@
+{
+  "variantName": "teaser-adventure",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-04T04:11:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://wknd.site/us/en.html",
+    "originPage": "WKND Adventures homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "wide",
+    "purpose": "adventure-promo",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + description + CTA + image-bottom",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "adventure/trip promotion teasers",
+      "full-width content teasers with image below",
+      "destination highlight sections"
+    ],
+    "notSuitableFor": [
+      "hero banners with background images",
+      "compact inline teasers",
+      "card-style promotions"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/us/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-04T04:11:00.000Z"
+  }
+}
