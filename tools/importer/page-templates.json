@@ -59,6 +59,47 @@
           "defaultContent": ["#title-ca6ac0fe65", "#button-b6562c963d", "#separator-e8e691c190"]
         }
       ]
+    },
+    {
+      "name": "adventures-listing",
+      "urls": ["https://wknd.site/us/en/adventures.html"],
+      "description": "Adventures listing page with hero teaser and filterable tabbed adventure cards",
+      "blocks": [
+        {
+          "name": "teaser-adventure",
+          "instances": [".teaser.cmp-teaser--hero"]
+        },
+        {
+          "name": "tabs-adventure",
+          "instances": [".tabs.panelcontainer"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-title",
+          "name": "Page Title",
+          "selector": "main.cmp-layout-container--fixed:first-of-type",
+          "style": null,
+          "blocks": [],
+          "defaultContent": ["h1"]
+        },
+        {
+          "id": "section-2-hero",
+          "name": "Hero Teaser",
+          "selector": ".teaser.cmp-teaser--hero",
+          "style": null,
+          "blocks": ["teaser-adventure"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-adventures",
+          "name": "Adventures Grid",
+          "selector": "main.cmp-layout-container--fixed:last-of-type",
+          "style": null,
+          "blocks": ["tabs-adventure"],
+          "defaultContent": ["h2.cmp-title__text"]
+        }
+      ]
     }
   ]
 }
