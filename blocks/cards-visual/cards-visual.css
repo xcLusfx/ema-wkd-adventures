@@ -1,0 +1,93 @@
+/* cards-visual: EPOCH Browse "New Visuals" — horizontal carousel of asset cards */
+
+.cards-visual {
+  /* block-scoped design tokens extracted from Figma node 71:3637 */
+  --cards-visual-card-width: 335px;
+  --cards-visual-gap: 20px;
+  --cards-visual-radius: 10px;
+  --cards-visual-desc-bg: #e8e7de;
+  --cards-visual-text: #736868;
+  --cards-visual-desc-pad: 12px;
+  --cards-visual-title-font: 'Libre Caslon Text', georgia, 'Times New Roman', serif;
+  --cards-visual-title-size: 18px;
+  --cards-visual-title-line: 24px;
+  --cards-visual-title-tracking: -0.36px;
+  --cards-visual-mono-font: 'IBM Plex Mono', 'Courier New', monospace;
+  --cards-visual-mono-size: 14px;
+}
+
+.cards-visual ul {
+  display: flex;
+  flex-direction: row;
+  gap: var(--cards-visual-gap);
+  margin: 0;
+  padding: 0 var(--cards-visual-gap);
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.cards-visual .cards-visual-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 var(--cards-visual-card-width);
+  width: var(--cards-visual-card-width);
+  scroll-snap-align: start;
+}
+
+.cards-visual .cards-visual-image {
+  margin: 0;
+  border-radius: var(--cards-visual-radius);
+  overflow: hidden;
+}
+
+.cards-visual .cards-visual-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cards-visual .cards-visual-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 4px;
+  margin-top: -28px;
+  padding: var(--cards-visual-desc-pad);
+  border-radius: var(--cards-visual-radius);
+  background-color: var(--cards-visual-desc-bg);
+}
+
+.cards-visual .cards-visual-body p {
+  margin: 0;
+  font-family: var(--cards-visual-title-font);
+  font-size: var(--cards-visual-title-size);
+  line-height: var(--cards-visual-title-line);
+  letter-spacing: var(--cards-visual-title-tracking);
+  color: var(--cards-visual-text);
+}
+
+/* author line rendered in italic to match the design */
+.cards-visual .cards-visual-body p em {
+  display: inline-block;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+/* duration pill in the bottom-right of the description bar */
+.cards-visual .cards-visual-body p.cards-visual-timestamp {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  align-self: flex-end;
+  padding: 1px 4px;
+  border: 1px solid var(--cards-visual-text);
+  border-radius: 4px;
+  font-family: var(--cards-visual-mono-font);
+  font-size: var(--cards-visual-mono-size);
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: center;
+}

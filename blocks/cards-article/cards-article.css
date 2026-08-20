@@ -16,6 +16,13 @@
   margin: 16px;
 }
 
+/* title link sits on its own line with clear separation from the description */
+.cards-article .cards-article-card-body a {
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+
 .cards-article .cards-article-card-image {
   line-height: 0;
 }

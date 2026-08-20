@@ -1,7 +1,11 @@
 {
-  "previewOrg": "xclusfx",
-  "previewSite": "ema-wkd-adventures",
   "type": "da",
-  "contentHostUrl": "https://content.da.live/xclusfx/ema-wkd-adventures/",
-  "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+  "sites": {
+    "ema-wkd-adventures": {
+      "libraryUrl": "https://github.com/xcLusfx/ema-wkd-adventures",
+      "previewOrg": "xcLusfx",
+      "previewSite": "ema-wkd-adventures",
+      "contentHostUrl": "https://content.da.live/xclusfx/ema-wkd-adventures/"
+    }
+  }
 }

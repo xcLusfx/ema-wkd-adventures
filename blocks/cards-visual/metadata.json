@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-visual",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-04T13:30:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.figma.com/design/XPEYITTw7olxQZvng7HRyu/Sample-UX?node-id=71-3637",
+    "originPage": "EPOCH Browse Experience - New Visuals",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "asset-browsing-carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + asset-name + author + duration",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "media asset carousels",
+      "sound/visual sample listings",
+      "horizontally scrolling card rows with overlay description bar"
+    ],
+    "notSuitableFor": [
+      "article listings (use cards-article)",
+      "feature/icon cards without images",
+      "product cards with pricing"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/epoch-browse"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-04T13:30:00.000Z"
+  }
+}

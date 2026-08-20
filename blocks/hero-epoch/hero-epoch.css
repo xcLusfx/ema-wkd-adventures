@@ -1,0 +1,115 @@
+/* hero-epoch: EPOCH Launch/Landing hero — serif wordmark on textured olive background */
+
+.hero-epoch {
+  /* block-scoped design tokens approximated from the EPOCH Launch/Landing frame */
+  --hero-epoch-bg: #5a5e35;
+  --hero-epoch-bg-accent: #6b6f42;
+  --hero-epoch-text: #ece7d6;
+  --hero-epoch-ring: rgb(236 231 214 / 60%);
+  --hero-epoch-wordmark-font: 'Times New Roman', times, georgia, serif;
+  --hero-epoch-wordmark-size: clamp(64px, 14vw, 220px);
+  --hero-epoch-min-height: 600px;
+  --hero-epoch-pad: 48px;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: var(--hero-epoch-min-height);
+  padding: var(--hero-epoch-pad);
+  overflow: hidden;
+  background-color: var(--hero-epoch-bg);
+  background-image: radial-gradient(
+    circle at 50% 45%,
+    var(--hero-epoch-bg-accent) 0%,
+    var(--hero-epoch-bg) 70%
+  );
+  color: var(--hero-epoch-text);
+  text-align: center;
+}
+
+/* optional background image fills the block edge-to-edge behind content */
+.hero-epoch picture {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+.hero-epoch picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* circular seal/ring framing the wordmark */
+.hero-epoch-ring {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: min(90vw, 720px);
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--hero-epoch-ring);
+  border-radius: 50%;
+}
+
+.hero-epoch-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-m, 24px);
+  padding: var(--hero-epoch-pad);
+}
+
+/* the EPOCH wordmark — large serif, wide tracking */
+.hero-epoch-content h1,
+.hero-epoch-content h2 {
+  margin: 0;
+  font-family: var(--hero-epoch-wordmark-font);
+  font-size: var(--hero-epoch-wordmark-size);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: var(--hero-epoch-text);
+  text-transform: uppercase;
+}
+
+.hero-epoch-content p {
+  max-width: 40ch;
+  margin: 0;
+  font-size: var(--body-font-size-s);
+  line-height: 1.5;
+  color: var(--hero-epoch-text);
+}
+
+/* CTA / button styling within the hero */
+.hero-epoch-content .button-container {
+  margin-top: var(--spacing-s, 16px);
+}
+
+.hero-epoch-content a.button {
+  border: 1px solid var(--hero-epoch-text);
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--hero-epoch-text);
+  font-family: var(--body-font-family);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.hero-epoch-content a.button:hover {
+  background-color: var(--hero-epoch-text);
+  color: var(--hero-epoch-bg);
+}
+
+@media (width >= 900px) {
+  .hero-epoch {
+    --hero-epoch-min-height: 760px;
+    --hero-epoch-pad: 64px;
+  }
+}
